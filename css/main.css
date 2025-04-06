@@ -1,0 +1,78 @@
+#header{
+    margin-top: 70px ;
+    margin-bottom:70px;
+    justify-items: center;
+}
+
+h1{
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2, h3{
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+.tablero{
+    justify-items: center;
+}
+
+button{
+    margin-top: 20px;
+    background-color: mediumpurple;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 9px 9px 9px 9px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0s ease-in-out;
+}
+
+button:hover{
+    background-color: rebeccapurple;
+    border: 3px solid mediumpurple;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button:active{
+    background-color: green;
+    transition: 0s ease;
+    border: 3px solid greenyellow;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.tabla{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 200px;
+    width: 30%;
+    font-size: 55px;
+}
+
+
+
+.tabla div{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin: 10px 10px 10px 10px ;
+    width: 95%;
+    border-radius: 30px ;
+    transition: 0.1s ease-in-out;
+
+}
+.botones{
+    display: flex;
+}
+.botones button{
+    margin-right: 10px;
+    margin-left: 10px;
+}
