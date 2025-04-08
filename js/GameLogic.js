@@ -15,7 +15,8 @@ var tablero = [
 var elementoclickeado = 0
 var elementosClickeados = []
 var origincolors = {}
-
+var puntuacionX = 0
+var puntuacionO = 0
 
 function roundStart(){
     turn = "❌"
@@ -243,6 +244,14 @@ function endGame(ganador){
         origincolors = {}
 
     } )
+    if(ganador === "⭕"){
+        puntuacionO+=1
+        document.getElementById("puntuacionO").innerHTML = `⭕:${puntuacionO}`
+    }
+    if(ganador === "❌"){
+        puntuacionX+=1
+        document.getElementById("puntuacionX").innerHTML = `❌:${puntuacionX}`
+    }
     document.querySelector("div.botones").appendChild(boton)
 
     juegoiniciado = false
