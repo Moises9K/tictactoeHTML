@@ -244,7 +244,7 @@ function endGame(ganador){
         origincolors = {}
 
     } )
-    if(ganador === "⭕"){
+    if(ganador === "⭕") {
         puntuacionO+=1
         document.getElementById("puntuacionO").innerHTML = `⭕:${puntuacionO}`
     }
